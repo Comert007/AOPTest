@@ -8,7 +8,7 @@ import android.app.Application;
 
 public class BaseApplication extends Application {
 
-    public static boolean isLogin = false;
+    public static boolean isLogin = true;
 
     @Override
     public void onCreate() {

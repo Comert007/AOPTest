@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * Created by feng on 2017/10/9.
  */
 
-@Target(ElementType.METHOD) //可以注解在方法 上
-@Retention(RetentionPolicy.RUNTIME) //运行时（执行时）存在
+@Retention(RetentionPolicy.RUNTIME) //保留到源码中，同时也保留到class中，最后加载到虚拟机中
+@Target({ElementType.METHOD,ElementType.CONSTRUCTOR}) //可以注解在方法或构造上
 public @interface CheckLogin {
 }

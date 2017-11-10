@@ -27,6 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
     @CheckLogin
     public void onAop(){
-        Log.d("tag","判断是否登录");
+        Log.d("tag","执行方法参数");
     }
 }
